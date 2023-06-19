@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    
+    <h1> 책 추천 프로그램 </h1><br>
+    <form accept-charset="utf-8" action="http://127.0.0.1:5000/prediction" method="POST">
+      가격 :  <input type="text" name='price' placeholder="(원)은 입력 하지 말것" style="width:240px;height:20px;font-size:15px;"> <br><br>
+      무게 :  <input type="text" name='weight' placeholder="ex) 300(g) g 단위로 입력해주세요" style="width:240px;height:20px;font-size:15px;"> <br><br>
+      총페이지 :  <input type="text" name='total_page' placeholder="ex) 300" style="width:120px;height:20px;font-size:15px;"> <br><br>
+      리뷰수 : <input type="text" name='review_count' placeholder="ex) 480" style="width:120px;height:20px;font-size:15px;"> <br><br>
+      카테고리 : <input type="text" name='category' placeholder="ex) '인문'" style="width:120px;height:20px;font-size:15px;"> <br><br><br>
+      <input type="submit" value='predict!' >
+    </form>
+    <h2> '예술', '자기계발', '인문', '경제 경영', '어린이', '소설/시/희곡', 
+      '만화/라이트노벨', '자연과학','국어 외국어 사전', '에세이', '건강 취미', '유아',
+       '청소년', '가정 살림', '수험서 자격증', '역사',
+       '종교', 'IT 모바일', '사회 정치', '전집' 
+       카테고리는 여기서 아무거나 골라서 입력해주세요.</h2><br>
+  </body>
+</html>
+
